@@ -1,0 +1,18 @@
+[project]
+name = "eda-cli"
+version = "0.1.0"
+description = "Mini EDA CLI for HW03"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+  "click>=8.1",
+]
+
+[project.scripts]
+eda-cli = "eda_cli.cli:cli"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
